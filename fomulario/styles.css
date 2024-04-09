@@ -1,0 +1,124 @@
+
+#div-container{ 
+   
+    height: 110vh;
+    display: grid;
+    grid-template-rows: 120px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.div-info{
+    display: flex;
+    gap: 20px;
+}
+
+
+body{
+ 
+    background-color: antiquewhite;
+}
+header{
+    grid-area: 1/1/2/7;
+}
+.div-data{
+    width: 88%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    background-color: #255538;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.boton-redondo {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    border: none;
+    background-color: rgb(238, 231, 231); /* Color inicial */
+    font-size: 25px;
+  }
+.title a{
+    text-decoration: none;
+    color: white;
+}
+.recipe{
+    margin-top: 25px;
+}
+.recipe a{
+    text-decoration: none;
+    color: rgb(228, 221, 221);
+}
+
+main{
+    grid-area: 4/2/2/3;    
+}
+
+footer{
+    grid-area: 4/5/4/1;
+}
+.div-data{
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    background-color: #255538;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.titleb{
+    color:white;
+} 
+footer .div-data h3 {
+    color: white;
+    padding-top: 10px;
+  }
+/* footer*/
+.container-formulario{
+    margin: 30px;
+    background-color: white;
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.container-formulario h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #7E4333;
+}
+.container-formulario p{
+     
+    margin-bottom: 20px;
+    font-size: 10px;
+}
+.form-group{
+    padding-top: 10px;
+}
+.form-group input,.form-group textarea{
+    width: 100%;
+    background-color: #DFDFDF;
+    border: none;
+    
+}
+.form-group label{
+    font-weight: bold;
+    color: #7E4333;
+}
+.container-formulario button{
+    background-color: #255538;
+    border: none;
+    color: white;
+    border-radius: 5px;
+     padding: 8px 20px 8px 20px;
+    
+}
+.container-formulario .button-div{
+   
+  padding-top: 20px;
+}
+.div-data .div-info-footer{
+    color: white;
+    padding-top: 14px;
+}
