@@ -1,63 +1,22 @@
-
-#div-container{ 
-   
-    height: 110vh;
-    display: grid;
-    grid-template-rows: 120px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
 }
-.div-info{
-    display: flex;
-    gap: 20px;
-}
-
-
 body{
- 
     background-color: antiquewhite;
 }
+#container{ 
+    height: 120vh;
+    display: grid;
+    grid-template-rows: 110px 1fr 110px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 header{
-    grid-area: 1/1/2/7;
+    grid-area: 1/1/2/5;
 }
-.div-data{
-    width: 88%;
-    margin: 0 auto;
-    display: flex;
-    justify-content:space-between;
-    background-color: #255538;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-.boton-redondo {
-    margin: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%; /* Hace que el botón sea redondo */
-    border: none;
-    background-color: rgb(238, 231, 231); /* Color inicial */
-    font-size: 25px;
-  }
-.title a{
-    text-decoration: none;
-    color: white;
-}
-.recipe{
-    margin-top: 25px;
-}
-.recipe a{
-    text-decoration: none;
-    color: rgb(228, 221, 221);
-}
-
-main{
-    grid-area: 4/2/2/3;    
-}
-
-footer{
-    grid-area: 4/5/4/1;
-}
-.div-data{
+.nav1y2{
     width: 98%;
     margin: 0 auto;
     display: flex;
@@ -67,58 +26,100 @@ footer{
     margin-top: 20px;
     border-radius: 5px;
 }
-.titleb{
-    color:white;
-} 
-footer .div-data h3 {
-    color: white;
-    padding-top: 10px;
-  }
-/* footer*/
-.container-formulario{
-    margin: 30px;
-    background-color: white;
-    height: 500px;
-    padding: 20px;
-    border-radius: 20px;
+.bitcooka{
+    margin-top: 7px;
 }
-.container-formulario h2{
+
+.bitcooka a{
+    text-decoration: none;
+    color: white;
+    font-family: DM Serif Display;
+}
+.divboton{
+    display: flex;
+    gap: 10px;
+}
+.formulary{
+    margin-top: 15px;
+}
+.formulary a{
+    text-decoration: none;
+    color: white;
+    font-family: DM Serif Display;
+}
+.botoncito {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    border: none;
+    background-color: rgb(238, 231, 231); /* Color inicial */
+    font-size: 25px;
+  }
+  main{
+    grid-area: 2/4/3/2;    
+}
+.contenedorfomulary{
+    margin: 10px;
+    background-color: white;
+    height: 550px;
+    padding: 30px;
+    border-radius: 30px;
+}
+.contenedorfomulary h2{
     text-align: center;
     margin-bottom: 20px;
     font-size: 20px;
     color: #7E4333;
 }
-.container-formulario p{
-     
+.contenedorfomulary p{
     margin-bottom: 20px;
-    font-size: 10px;
+    font-size: 13px;
+    text-align: center;
 }
-.form-group{
+.form-esp{
     padding-top: 10px;
 }
-.form-group input,.form-group textarea{
+.form-esp input,.form-esp textarea{
+    margin: 5px;
     width: 100%;
-    background-color: #DFDFDF;
+    background-color: #f5dcdc;
     border: none;
-    
 }
-.form-group label{
+.form-esp label{
+    margin: 10px;
     font-weight: bold;
     color: #7E4333;
 }
-.container-formulario button{
+.contenedorfomulary button{
     background-color: #255538;
     border: none;
     color: white;
     border-radius: 5px;
-     padding: 8px 20px 8px 20px;
-    
+    padding: 8px 20px 5px 20px;
 }
-.container-formulario .button-div{
-   
+.contenedorfomulary .button-div{ 
   padding-top: 20px;
+  text-align: center;
 }
-.div-data .div-info-footer{
+footer{
+    grid-area: 4/5/4/1;
+}
+.nav1y2{
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    background-color: #255538;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.bitcookb{
+    color:white;
+    font-family: DM Serif Display;
+} 
+footer .nav1y2 h3 {
     color: white;
-    padding-top: 14px;
-}
+    padding-top: 10px;
+    font-family: DM Serif Display;
+  }
