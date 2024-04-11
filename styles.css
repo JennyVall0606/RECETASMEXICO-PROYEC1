@@ -14,6 +14,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 header{
+    position: relative;
     grid-area: 1/1/2/5;
 }
 .nav1y2{
@@ -25,15 +26,18 @@ header{
     padding: 15px;
     margin-top: 20px;
     border-radius: 5px;
+    position:relative;
 }
 .bitcooka{
     margin-top: 7px;
+    position:relative;
 }
 
 .bitcooka a{
     text-decoration: none;
     color: white;
     font-family: DM Serif Display;
+    position:relative;
 }
 .divboton{
     display: flex;
@@ -60,22 +64,28 @@ header{
     grid-area: 2/1/3/5;
 }
 .fotoprincipal{
-    width:90%;
-    margin: 15px auto;
-    height: 368px;
+    background-image: url(./images/FONDO\ COMIDA\ MEXICO.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 220px;
     display: flex;
-    justify-content: start; 
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    position:relative;
+    width:100%;
+    height: 368px;
+    max-width: 1239px;
     border: 0px solid black;
-    background-image: url(./images/FONDO\ COMIDA\ MEXICO.jpeg); 
-    background-size: 1220px 368px;
-    border-radius: 20px;
+    margin: 15px auto; 
 }
 .datosfotoprin{
-    margin: 0px 0px 0px 380px;
-    text-align: center;
-    padding-top: 120px;
+    width:100%;
+    position:absolute;
     color: white;
-    font-size: 40px;
+    font-size: 50px;
+    text-align: center;
+    position:relative;
 }
 #grid-container {
     display: grid;
@@ -85,8 +95,8 @@ header{
     grid-template-rows: 101px fit-content fit-content;
     grid-template-areas: 
     "p p p"
-    "recipeA recipeB recipeC"
-    "recipeD recipeE recipeF";
+    "Preparacion1 Preparacion2 Preparacion3 "
+    "Preparacion4 Preparacion5 Preparacion6 ";
     grid-gap: 20px;
 }
 #separador {
@@ -108,7 +118,7 @@ main h2 {
 }
 
 #Preparacion1 {
-    grid-area: recipeA;
+    grid-area: Preparacion1;
     
 }
 
@@ -131,7 +141,7 @@ main #Preparacion1 a img {
 }
 
 #Preparacion2 {
-    grid-area: recipeB;
+    grid-area: Preparacion2;
 }
 
 #Preparacion2 a img{
@@ -152,7 +162,7 @@ main #Preparacion1 a img {
 }
 
 #Preparacion3 {
-    grid-area: recipeC;
+    grid-area: Preparacion3;
 }
 
 #Preparacion3 a img {
@@ -173,7 +183,7 @@ main #Preparacion1 a img {
     margin-top: 11px;
 }
 #Preparacion4 {
-    grid-area: recipeD;
+    grid-area: Preparacion4;
 }
 
 #Preparacion4 a img {
@@ -195,7 +205,7 @@ main #Preparacion1 a img {
 }
 
 #Preparacion5 {
-    grid-area: recipeE;
+    grid-area: Preparacion5;
 }
 
 #Preparacion5 a img {
@@ -217,7 +227,7 @@ main #Preparacion1 a img {
 }
 
 #Preparacion6 {
-    grid-area: recipeF;
+    grid-area: Preparacion6;
 }
 
 #Preparacion6 a img {
@@ -262,3 +272,34 @@ footer .nav1y2 h3 {
     padding-top: 10px;
     font-family: DM Serif Display;
   }
+
+  @media(max-width: 768px) {
+    main {
+        #grid-container {
+            display: grid;
+    margin: 0 auto;
+    max-width: 1239px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 101px 440px 440px 440px;
+    grid-template-areas: 
+    "p p"
+    "Preparacion1 Preparacion2"
+    "Preparacion3 Preparacion4"
+    "Preparacion5 Preparacion6";
+    gap: 20px;
+    }
+    }
+    }
+
+
+@media(max-width: 560px) {
+    main {
+        #grid-container {
+            display: flex;
+    margin: 0 auto;
+    max-width: 1239px;
+    flex-direction: column;
+    gap: 20px;
+        }
+    }
+}
